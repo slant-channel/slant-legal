@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slant</title>
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #080808;
+      color: #f0f0f0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 28px;
+      margin-bottom: 40px;
+    }
+
+    .logo-mark {
+      width: 96px;
+      height: 96px;
+    }
+
+    .logo-wordmark {
+      font-size: 2.4rem;
+      font-weight: 800;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #fff;
+      line-height: 1;
+    }
+
+    .tagline {
+      font-size: 0.8rem;
+      color: #383838;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      margin-bottom: 52px;
+    }
+
+    .links {
+      display: flex;
+      gap: 36px;
+      font-size: 0.8rem;
+    }
+
+    .links a {
+      color: #333;
+      text-decoration: none;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      transition: color 0.15s ease;
+    }
+
+    .links a:hover { color: #888; }
+  </style>
+</head>
+<body>
+
+  <div class="brand">
+    <!-- Logo mark: gradient diagonal stroke in a dark circle -->
+    <svg class="logo-mark" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="g" x1="0" y1="96" x2="96" y2="0" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#FF3CAC"/>
+          <stop offset="50%" stop-color="#784BA0"/>
+          <stop offset="100%" stop-color="#2B86C5"/>
+        </linearGradient>
+        <clipPath id="c">
+          <circle cx="48" cy="48" r="48"/>
+        </clipPath>
+      </defs>
+      <circle cx="48" cy="48" r="48" fill="#111111"/>
+      <rect x="34" y="6" width="28" height="84" rx="14" fill="url(#g)" transform="rotate(-22 48 48)" clip-path="url(#c)"/>
+    </svg>
+
+    <div class="logo-wordmark">Slant</div>
+  </div>
+
+  <div class="tagline">A different angle on the world</div>
+
+  <div class="links">
+    <a href="privacy-policy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="mailto:slantchannel@gmail.com">Contact</a>
+  </div>
+
+</body>
+</html>
